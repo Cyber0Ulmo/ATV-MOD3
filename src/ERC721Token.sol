@@ -3,9 +3,9 @@ pragma solidity ^0.8.0;
 
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract ERC721TokenManualRoles is ERC721 {
+contract ERC721Token is ERC721 {
     // State Variables
-    uint256 public tokenCount;                     
+    uint256 public tokenCount;               
     address public admin;                          
     mapping(address => bool) public minters;       
     mapping(address => bool) public burners;       
